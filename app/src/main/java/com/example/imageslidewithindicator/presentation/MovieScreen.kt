@@ -48,7 +48,7 @@ fun MovieScreen(
         }
     }
     LaunchedEffect(key1 = state.currentPage) {
-        delay(3000)
+        delay(5000)
         var newPosition = state.currentPage + 1
         if (newPosition > viewModel.movieListResponse.size - 1) newPosition = 0
         state.animateScrollToPage(newPosition)
